@@ -29,3 +29,7 @@ function show(idname){
     curr_div = idname;
     return false;
 }
+
+$(document).ready(function(){
+    $(".dropdown-button").dropdown();
+});
