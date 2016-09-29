@@ -12,17 +12,17 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
 
-<body class="particles">
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    
-    
+    <script type="text/javascript" src="js/navigation.js"></script> <!-- Navigation -->
+</head>
+
+<body class="particles">
     <div class="container">
         <div id="head">
-            <a href="index.html">
+            <a onclick="show('about');">
             <div class="row center-align"> 
                 <img class="circle responsive-img faceshot" align="center" src="assets/faceshot.jpg">       
             </div> <!-- img row -->
@@ -34,22 +34,22 @@
 
             <div class="row center-align card-panel cyan lighten-2">
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="ben.html" class="navbutton"><img src="./assets/ben.png" height="30" />BEN</a>
+                    <a class="navbutton" onclick="show('ben');"><img src="./assets/ben.png" height="30" />BEN</a>
                 </div>
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="radio.html" class="navbutton">Radio</a>
+                    <a class="navbutton" onclick="show('radio');">Radio</a>
                 </div>
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="http://diid.today" class="navbutton">DIID</a>
+                    <a href="http://diid.today" class="navbutton">DistributedID</a>
                 </div>
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="iit.html" class="navbutton">IIT</a>
+                    <a class="navbutton" onclick="show('iit');">IIT</a>
                 </div>
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="chicagohacks.html" class="navbutton">ChiHacks</a>
+                    <a a class="navbutton" onclick="show('chihacks');">ChiHacks</a>
                 </div>
                 <div class="col s2 heading1 waves-effect waves-teal btn-flat">
-                    <a href="contact.html" class="navbutton">Contact</a> 
+                    <a class="navbutton" onclick="show('contact')">Contact</a> 
                 </div>
             </div> <!-- buttons row -->     
 
@@ -57,18 +57,79 @@
 
         <div id="body">
 
-            <div name="aboutme" class="card-panel cyan lighten-2">
+            <div id="about" class="card-panel cyan lighten-2" style="display: block;">
                 <h3 class="yellow-text text-accent3"> About Me </h3>
                 <div class="divider"></div>
                 <p class="ptext"> Hi! I'm a undergraduate at <a href="http://web.iit.edu/" target="_blank">Illinois Tech</a> studying Computer Science in Chicago, IL. My specialty is <a href="https://blockchainedu.org/learn/" target="_blank">blockchain development</a> and I am the Chicago Regional Ambassador for the <a href="https://blockchainedu.org" target="_blank"> Blockchain Education Network</a>. In my spare time I love going to and planing hackathons, CTFs, and other cool coding challenge workshops for my peers. <br><br>
                 You can check out my resume <a href="./assets/resume.pdf">here</a>                
-                </p>
-                        
+                </p>    
             </div> <!-- About Me --> 
             
-            <div name="contact" class="">
-            <!-- Email, Facebook, Twitter, LinkedIn, Github, Gitlab, Devpost  -->    
-            </div> <!-- Connect with Me --> 
+            <div id="ben" class="card-panel cyan lighten-2" style="display: none;">
+                <h3 class="yellow-text text-accent3"> Blockchain Education Network </h3>
+                <h4 class="yellow-text text-accent3"> <a href="https://blockchainedu.org/regions/" target="_blank"><i>Chicago Regional Ambassador</i></a> </h4>
+                <div class="divider"></div>
+                <p class="ptext"> As the Chicago Regional Ambassador I'm in charge of planning events and growing the blockchain ecosystem in Chicago. I cofounded the BEN chapter at IIT and serve as an advisor to Chicago students, entreprenuers and regulators who want to know more about bitcoin and get into the space.</p> <br>
+
+                <h5 class="yellow-text text-accent4">Chicago Bitcoin Airdrop</h5> <br>
+                <h5 class="yellow-text text-accent4">Chicago Blockchain Developers Conference </h5> <br>  
+            </div> <!-- BEN -->
+
+            <div id="chihacks" class="card-panel cyan lighten-2" style="display: none;">
+                <h3 class="yellow-text text-accent3"> Chicago Hacks </h3>
+                <div class="divider"></div>
+                <p class="ptext"></p>               
+            </div> <!-- Chi Hacks -->
+
+            <div id="radio" class="card-panel cyan lighten-2" style="display: none;"> 
+                <div class="row">
+                    <div class="col s10">
+                        <h3 class="yellow-text text-accent3"> Dev with Dev </h3>
+                    </div>
+                    <div class="col s2">
+                        <img src="assets/dev_1.png" id="dev_1"/>    
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                <div id="tunein" class="row center-align">
+                    <iframe src="https://tunein.com/embed/player/s29558/" style="width:300px; height:100px; padding-top: 5px" scrolling="no" frameborder="no"></iframe>                        
+                </div>
+
+                <div id="radio_desc" class="row">
+                    <div class="col s7"> 
+                        <p class="ptext">                 
+                        Dev with Dev (hosted by Dev the Dev) is hour long show on <i class="broadcasttime">Thursdays</i> broadcasted live from <i class="broadcasttime">1pm to 2pm </i> out of the A. Sidney Katz Radio station at Illinois Tech. A show focused on talking about new developments in technology as they come up and interviewing guests about their research and personal projects.                 
+                        </p>     
+                    </div>
+                    <div class="col s5">
+                        <div class="center-align"><h5 class="yellow-text text-accent3"> Station Number:  1-312-567-3088 </h5> </div> <!-- Call Now -->
+                        <div class="center-align changetip">
+                            <div class="changetip_tipme_button" data-bid="a1b9502c-62fe-4e35-b24b-f72166e42f91" data-uid="BQUogQ4CyZjF4NKe2Eji77">
+                                 <h5 class="yellow-text text-accent3"> Tip me in Bitcoin!</h5>
+                            </div>
+                            <script>(function(document,script,id){var js,r=document.getElementsByTagName(script)[0],protocol=/^http:/.test(document.location)?'http':'https';if(!document.getElementById(id)){js=document.createElement(script);js.id=id;js.src=protocol+'://widgets.changetip.com/public/js/widgets.js';r.parentNode.insertBefore(js,r)}}(document,'script','changetip_w_0'));</script>
+                        </div> <!-- Tip -->
+                    </div>
+                </div>  
+            </div> <!-- Radio -->
+            
+            <div id="contact" class="card-panel cyan lighten-2" style="display: none;">
+                <h3 class="yellow-text text-accent3"> Contact Me! </h3>
+                <div class="divider"></div>
+                <p class="ptext"></p>
+                        
+            </div> <!-- Contact -->
+
+            <div id="iit" class="card-panel cyan lighten-2" style="display: none;">
+                <h3 class="yellow-text text-accent3"> About Me </h3>
+                <div class="divider"></div>
+                <h5 class="yellow-text text-accent4">bIITcoin Chicago</h5><br>
+                <h5 class="yellow-text text-accent4">AITP</h5> <br>
+                <h5 class="yellow-text text-accent4">ACM </h5> <br> 
+                        
+            </div> <!-- Illinois Tech -->
+
         </div> <!-- Body -->
 
         <div id="footer" class="center-align">
