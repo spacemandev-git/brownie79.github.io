@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="css/custom.css">
 
@@ -44,9 +45,9 @@
 
             <nav class="cyan lighten-2">
                 <div class="nav-wrapper">
-                    <a class="brand-logo" style="padding-left: 10px">Dev Bharel </a>
+                    <a class="brand-logo" style="padding-left: 10px" onclick="show('about');">About</a>
                     <ul class="right hide-on-med-and-down">
-                    <li><a onclick="show('about')">About/Contact</a></li>
+                    <li><a onclick="show('contact')">Contact</a></li>
                     <!-- Dropdown Trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown">
                         Projects<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -57,7 +58,7 @@
 
         <div id="body">
 
-            <div id="about" class="card-panel cyan lighten-2" style="display: block;">
+            <div id="about" class="card-panel black lighten-2" style="display: block;">
                 <h3 class="yellow-text text-accent3"> About Me </h3>
                 <div class="divider"></div>
                 <p class="ptext"> Hi! I'm a undergraduate at <a href="http://web.iit.edu/" target="_blank">Illinois Tech</a> studying Computer Science in Chicago, IL. My specialty is <a href="https://blockchainedu.org/learn/" target="_blank">blockchain development</a> and I am the Chicago Regional Ambassador for the <a href="https://blockchainedu.org" target="_blank"> Blockchain Education Network</a>. In my spare time I love going to and planing hackathons, CTFs, and other cool coding challenge workshops for my peers. <br><br>
@@ -65,23 +66,30 @@
                 </p>    
             </div> <!-- About Me --> 
             
-            <div id="ben" class="card-panel cyan lighten-2" style="display: none;">
+            <div id="ben" class="card-panel black lighten-2" style="display: none;">
                 <h3 class="yellow-text text-accent3"> Blockchain Education Network </h3>
                 <h4 class="yellow-text text-accent3"> <a href="https://blockchainedu.org/regions/" target="_blank"><i>Chicago Regional Ambassador</i></a> </h4>
                 <div class="divider"></div>
                 <p class="ptext"> As the Chicago Regional Ambassador I'm in charge of planning events and growing the blockchain ecosystem in Chicago. I cofounded the BEN chapter at IIT and serve as an advisor to Chicago students, entreprenuers and regulators who want to know more about bitcoin and get into the space.</p> <br>
 
-                <h5 class="yellow-text text-accent4">Chicago Bitcoin Airdrop</h5> <br>
-                <h5 class="yellow-text text-accent4">Chicago Blockchain Developers Conference </h5> <br>  
+                <h5 class="yellow-text text-accent4">Chicago Bitcoin Airdrop</h5> 
+                <p class="ptext">A Chicago wide university airdrop in which he hosted a 10 hour radio live stream and went from university to university handing out free bitcoin to students to get them interested in blockchain education! This happened in Chicago and across the world in different regions in the month of september, to find out more, click 
+                <a href="https://medium.com/blockchain-education-network/bens-first-bitcoin-airdrop-71bc6ef107a2#.xkwo4wo0q">here</a></p>
+                <br>
+                <h5 class="yellow-text text-accent4">Chicago Blockchain Developers Conference </h5> 
+                <p class="ptext">As part of BEN's fall initative, we will be hosting Chicago Blockchain Hacknights and a Chicago wide blockchain hackathon. Find out more about it 
+                    <a href="https://blockchainedu.org/cbdc/">here.</a> </p>
+
             </div> <!-- BEN -->
 
-            <div id="chihacks" class="card-panel cyan lighten-2" style="display: none;">
+            <div id="chihacks" class="card-panel black lighten-2" style="display: none;">
                 <h3 class="yellow-text text-accent3"> Chicago Hacks </h3>
                 <div class="divider"></div>
-                <p class="ptext"></p>               
-            </div> <!-- Chi Hacks -->
+                <p class="ptext">Under Construction</p>
+                <!-- Uncommon + UChicago Hacknights + Page-->               
+            </div> <!-- Chi Hacks* -->
 
-            <div id="radio" class="card-panel cyan lighten-2" style="display: none;"> 
+            <div id="radio" class="card-panel black lighten-2" style="display: none;"> 
                 <div class="row">
                     <div class="col s10">
                         <h3 class="yellow-text text-accent3"> Dev with Dev </h3>
@@ -114,26 +122,52 @@
                 </div>  
             </div> <!-- Radio -->
             
-            <div id="contact" class="card-panel cyan lighten-2" style="display: none;">
+            <div id="contact" class="card-panel black lighten-2" style="display: none;">
                 <h3 class="yellow-text text-accent3"> Contact Me! </h3>
                 <div class="divider"></div>
-                <p class="ptext"></p>
+
+                <div id="social" class="center-align">
+                    <a href="https://www.linkedin.com/in/devanshu-bharel-844ba698">
+                        <img src="assets/social/linkedin_gliph.svg"></img>
+                    </a>
+                    <a href="https://www.facebook.com/dst97">
+                        <img src="assets/social/facebook_glyph.svg"></img>
+                    </a>
+                    <a href="mailto:devbharel@gmail.com?Subject=Website%20Contact">
+                        <img src="assets/social/email_flat.svg" ></img>   
+                    </a>
+                    <a href="https://github.com/Brownie79">
+                        <img src="assets/social/github_glyph.svg" ></img>
+                    </a>
+                    <a href="https://keybase.io/brownie79">
+                        <img src="assets/social/keybase.png"></img>
+                    </a> <!-- https://keybase.io/docs/personal_keybase --> 
+                    <!--  <a href="http://devpost.com/brownie79">Devpost</a> -->
+                    <!-- <a href="">Medium</a> -->
+                </div>
+
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/devbharel" style="min-width:320px;height:580px;"></div>
+                <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+                <!-- Calendly inline widget end -->
                         
             </div> <!-- Contact -->
 
-            <div id="iit" class="card-panel cyan lighten-2" style="display: none;">
+            <div id="iit" class="card-panel black lighten-2" style="display: none;">
                 <h3 class="yellow-text text-accent3"> About Me </h3>
                 <div class="divider"></div>
+                <span>Under Construction</span>
                 <h5 class="yellow-text text-accent4">bIITcoin Chicago</h5><br>
                 <h5 class="yellow-text text-accent4">AITP</h5> <br>
                 <h5 class="yellow-text text-accent4">ACM </h5> <br> 
                         
-            </div> <!-- Illinois Tech -->
+            </div> <!-- Illinois Tech* -->
 
         </div> <!-- Body -->
 
         <div id="footer" class="center-align">
             <p>Made With <img src="./assets/brain.svg" style="height: 1.5em; vertical-align: text-bottom;" title="Knowledge"/> In Chicago</p>
+            <div class="changetip_tipme_button" data-bid="a1b9502c-62fe-4e35-b24b-f72166e42f91" data-uid="BQUogQ4CyZjF4NKe2Eji77" style="padding-left:15px float:left display:inline-block"></div>
             <div style="display: none;">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </div>
     </div>
@@ -152,7 +186,3 @@
 </html>
     
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/devbharel" style="min-width:320px;height:580px;"></div>
-<script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->

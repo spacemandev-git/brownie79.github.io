@@ -46,3 +46,26 @@
 .show{
     display:block;
 }
+#social a {
+	overflow: hidden;
+}    
+#social a > i, #social a img {
+	font-size: 80px;
+	color: black;
+	padding: 10px;
+}
+#social a img {
+	border-radius: .25em;
+	width: 70px;
+	height: 70px;
+}
+#social a i:hover {
+	color: #808080;
+}
+#social a img:hover {
+	
+}
+#social {
+	margin-left: 40px;				/* check math */
+	margin-top: 20px;
+}
