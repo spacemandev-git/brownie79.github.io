@@ -28,6 +28,9 @@
     color: dodgerblue;
 }
 .changetip{
+    display: inline-block;
+}
+.changetip > div {
     padding-top: 10px;
 }
 #dev_1{
