@@ -55,9 +55,11 @@
 	padding: 10px;
 }
 #social a img {
-	border-radius: .25em;
-	width: 70px;
-	height: 70px;
+    border-radius: .25em;
+    width: 100px;
+    margin: 30px;
+    height: 100px;
+    background-color: #ffffff;
 }
 #social a i:hover {
 	color: #808080;
