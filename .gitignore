@@ -1,0 +1,5 @@
+.vscode/
+.editorconfig/
+app/**/*.js
+*.js.map
+node_modules/
