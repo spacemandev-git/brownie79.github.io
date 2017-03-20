@@ -9,7 +9,9 @@ declare var $:JQueryStatic;
 export class BodyComponent  {
   ngAfterViewInit(){
     //initalize materialize css components
-    $(".button-collapse").sideNav();    
+    $(".button-collapse").sideNav({
+      closeOnClick: true
+    });    
   }
 
 }

@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   selector: 'header',
   templateUrl: '../html/header.html'
 })
-export class HeaderComponent  { }
+export class HeaderComponent  {
+
+  showSideMenu(){
+      $('.button-collapse').sideNav('show');
+  }
+
+ }
