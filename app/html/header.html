@@ -1,24 +1,26 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo right" id="navbar">Dev Bharel</a>
+        <a href="#" class="brand-logo right" id="website-title">dev bharel</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#" (click)="showSideMenu()">Menu</a></li>
+            <li><a href="#" (click)="showSideMenu()">menu</a></li>
         </ul>
 
         <ul id="slide-out" class="side-nav">
             <li><div class="userView">
                 <div class="background">
-                <!-- <img src="assets/office.jpg"> -->
+                <img src="app/html/assets/sidenav_background3.jpg">
                 </div>
-                <a href="#!user"><!-- <img class="circle" src="assets/yuna.jpg"> --></a>
-                <a href="#!name"><span class="white-text name">John Doe</span></a>
-                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#"><img class="circle" src="app/html/assets/faceshot.png"></a>
+                <a href="#"><span class="white-text name">dev bharel</span></a>
+                <a href="mailto:devbharel@gmail.com"><span class="white-text email">devbharel@gmail.com</span></a>
             </div></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            <!-- <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
+            <li><a routerLink="/blog" routerLinkActive="active">blog</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">about</a></li>
+            <li><a routerLink="/projects" routerLinkActive="active">projects</a></li>
             <li><div class="divider"></div></li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">contact</a></li>
+  
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     
@@ -26,9 +28,11 @@
 </nav>
 
 
-
 <style>
-    #navbar{
+    #website-title{
         padding-right: 30px;
+    }
+    .nav-wrapper{
+        background-color: black;
     } 
 </style>

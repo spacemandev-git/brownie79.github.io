@@ -3,15 +3,14 @@ declare var $:JQueryStatic;
 
 @Component({
   moduleId: module.id,
-  selector: 'body-comp',
-  templateUrl: '../html/body.html'
+  selector: 'page-home',
+  templateUrl: '../html/page_home.html'
 })
-export class BodyComponent  {
+export class Page_HomeComponent  {
   ngAfterViewInit(){
     //initalize materialize css components
     $(".button-collapse").sideNav({
       closeOnClick: true
     });    
   }
-
 }

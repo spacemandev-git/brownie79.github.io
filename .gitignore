@@ -1,4 +1,5 @@
 .vscode/
+.idea/
 .editorconfig/
 app/**/*.js
 *.js.map
