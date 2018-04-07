@@ -1,155 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
 
-    <!-- Favicon and tab title -->
-    <link rel="shortcut icon" href="assets/dev.png">
-    <title>Spaceman Holdings LLC</title>
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
 
-    <!-- Facebook preview info -->
-    <meta property="og:title" content="Spaceman Holdings LLC" />
-    <meta property="og:description" content="Spaceman Holdings LLC Homepage" />
-    <meta name="description" content="Spaceman Holdings LLC Homepage" />
-    <!-- Reinstate below meta tag when live on blockchainspaceman.com-->
-    <!-- <meta property="og:url" content="https://blockchainspaceman.com" /> -->
-    <meta property="og:url" content="http://mynes.me/demos/spaceman-dev/" />
-    <meta property="og:type" content="website" />
-    <!-- Spaceman logo -->
-    <meta property="og:image" content="https://i.imgur.com/ounsefx.png" />
+  <!-- Favicon and tab title -->
+  <link rel="shortcut icon" href="assets/dev.png">
+  <title>Spaceman Holdings LLC</title>
+
+  <!-- Facebook preview info -->
+  <meta property="og:title" content="Spaceman Holdings LLC" />
+  <meta property="og:description" content="Spaceman Holdings LLC Homepage" />
+  <meta name="description" content="Spaceman Holdings LLC Homepage" />
+  <!-- Reinstate below meta tag when live on blockchainspaceman.com-->
+  <meta property="og:url" content="https://blockchainspaceman.com" />
+  <!-- <meta property="og:url" content="http://mynes.me/demos/spaceman-dev/" /> -->
+  <meta property="og:type" content="website" />
+  <!-- Spaceman logo -->
+  <meta property="og:image" content="https://i.imgur.com/ounsefx.png" />
 
 
-    <!-- Twitter preview info -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@CheesieBrownie">
-    <meta name="twitter:creator" content="@jmynes">
-    <meta name="twitter:title" content="Spaceman Holdings LLC">
-    <meta name="twitter:description" content="Spaceman Holdings LLC Homepage">
-    <!-- Spaceman logo -->
-    <meta name="twitter:image:src" content="https://i.imgur.com/ounsefx.png">
-    <meta name="twitter:image:alt" content="Spaceman Logo">
+  <!-- Twitter preview info -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CheesyBrownie">
+  <meta name="twitter:creator" content="@jmynes">
+  <meta name="twitter:title" content="Spaceman Holdings LLC">
+  <meta name="twitter:description" content="Spaceman Holdings LLC Homepage">
+  <!-- Spaceman logo -->
+  <meta name="twitter:image:src" content="https://i.imgur.com/ounsefx.png">
+  <meta name="twitter:image:alt" content="Spaceman Logo">
 
-    <!--Import Google Icon Font, I disabled it because it is missing a lot of important icons -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <!--Import Google Icon Font, I disabled it because it is missing a lot of important icons -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
-    <!-- Import Font Awesome, Google Icon Font doesn't have Twitter -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Import Font Awesome, Google Icon Font doesn't have Twitter -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--Import materialize.min.css, compiled from materialize.scss -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"
-media="screen,projection"/>
+  <!--Import materialize.min.css, compiled from materialize.scss -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-  <!--
+<!--
     Standardly, Materialize CSS wants us to use classes here for color.
     Instead, I've set body to have a grey space #424848 background in CSS instead as a
     fallback if the space image does not load for some reason.
   -->
-  <body>
-    <header>
-      <!-- TODO: Breadcrumbs instead? -->
 
-      <!--
+<body>
+  <header>
+    <!-- TODO: Breadcrumbs instead? -->
+
+    <!--
         If you want to try to make the logo better centered:
         https://stackoverflow.com/questions/33444381/materialize-framework-responsive-logo-in-navbar
       -->
 
-      <!-- Mobile controls -->
-      <nav class="mobile-space-control">
-        <div class="nav-wrapper">
-          <!-- Changed this from Google Icon to Font Awesome, so that we didn't need two imports -->
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
-        </div>
-      </nav>
-      <!-- http://materializecss.com/sidenav.html#! a close button could be added to the sidebar, as well. -->
-      <ul class="sidenav" id="mobile-demo">
-        <li>
-          <div class="user-view">
-            <div class="background">
-              <!--<img src="assets/background.png">-->
-            </div>
-            <!-- Put social buttons here in place of direct text for email/twitter etc -->
-            <a href="#user"><img class="circle" src="assets/dev-white.png"></a>
-            <a href="#name"><span class="white-text name">Dev Bharel</span></a>
-            <div class="user-links">
-              <a class="white-text" href="https://www.facebook.com/dst97"><i class="fa fa-facebook"></i></a>
-              <a class="white-text" href="https://www.linkedin.com/in/devbharel/"><i class="fa fa-linkedin"></i></a>
-              <a class="white-text" href="https://twitter.com/cheesybrownie?lang=en"><i class="fa fa-twitter"></i></a>
-              <a class="white-text" href="mailto:dev@blockchainspaceman.com"><i class="fa fa-envelope"></i></a>
-            </div>
+    <!-- Mobile controls -->
+    <nav class="mobile-space-control">
+      <div class="nav-wrapper">
+        <!-- Changed this from Google Icon to Font Awesome, so that we didn't need two imports -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- http://materializecss.com/sidenav.html#! a close button could be added to the sidebar, as well. -->
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <!--<img src="assets/background.png">-->
           </div>
-        </li>
-        <!-- Honestly prefer selecting text color in CSS but this is how Materialize does this -->
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal1">Events/Talks</a></li>
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal2">Projects</a></li>
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal3">Lorem Ipsum</a></li>
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal4">Dolor Sit Amet</a></li>
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal5">About</a></li>
-        <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal6">Contact</a></li>
-      </ul>
-    </header>
-
-    <!-- Desktop controls -->
-    <div class="space-control">
-      <!-- <h2 class="subtitle">Spaceman Holdings LLC</h2> -->
-      <div class="top-row">
-        <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal1">Events/Talks</a>
-        <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal2">Projects</a>
-      </div>
-
-      <div class="middle-row">
-        <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal3">Lorem Ipsum</a>
-        <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal4">Dolor sit amet</a>
-      </div>
-
-      <div class="bottom-row">
-        <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal5">About</a>
-        <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal6">Contact</a>
-      </div>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal white-text">
-      <div class="modal-content">
-        <h4>Events/Talks</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla. Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl. Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis. Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum, libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at, elementum est.
-        </p>
-
-        <div class="video-container">
-          <iframe width="854" height="480" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- Put social buttons here in place of direct text for email/twitter etc -->
+          <a href="#user">
+            <img class="circle" src="assets/dev-white.png">
+          </a>
+          <a href="#name">
+            <span class="white-text name">Dev Bharel</span>
+          </a>
+          <div class="user-links">
+            <a class="white-text" href="https://www.facebook.com/dst97">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a class="white-text" href="https://www.linkedin.com/in/devbharel/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="white-text" href="https://twitter.com/cheesybrownie?lang=en">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="white-text" href="mailto:dev@blockchainspaceman.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </div>
         </div>
+      </li>
+      <!-- Honestly prefer selecting text color in CSS but this is how Materialize does this -->
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal1">Events/Talks</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal2">Projects</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal3">Lorem Ipsum</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal4">Dolor Sit Amet</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal5">About</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light modal-trigger white-text" href="#modal6">Contact</a>
+      </li>
+    </ul>
+  </header>
 
-        <p>
-          Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra non molestie a, semper id nunc.
-        </p>
-        <p>
-          Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec. Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
-        </p>
-        <p>
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
-        </p>
-      </div>
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
-      </div>
+  <!-- Desktop controls -->
+  <div class="space-control">
+    <!-- <h2 class="subtitle">Spaceman Holdings LLC</h2> -->
+    <div class="top-row">
+      <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal1">Events/Talks</a>
+      <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal2">Projects</a>
     </div>
 
-    <div id="modal2" class="modal white-text">
-      <div class="modal-content">
-        <h4>Projects</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod nunc eu pellentesque iaculis. Aliquam scelerisque dolor eget sem ultrices, non finibus sapien sagittis. Cras quis est a ex ultricies euismod. Suspendisse ultricies mauris vitae lectus dapibus, aliquam egestas est ullamcorper. Sed vulputate posuere augue, quis gravida dolor. Proin eget massa tempus, auctor tellus sit amet, posuere metus. Ut justo eros, aliquet ac nisl id, ornare sagittis orci. Nam leo nunc, pretium quis tortor at, posuere iaculis dui. Phasellus non mauris nec sem placerat condimentum nec quis purus. Duis ut urna non ex facilisis lobortis quis quis leo. Nulla sollicitudin sit amet felis eu pretium. Etiam pretium sodales mauris. Aliquam erat volutpat. Suspendisse nec eros orci.
-        </p>
 
-        <!--
+    <div class="middle-row">
+      <!--
+      <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal3">Lorem Ipsum</a>
+      <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal4">Dolor sit amet</a>
+    -->
+    </div>
+
+
+    <div class="bottom-row">
+      <a class="left waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal5">About</a>
+      <a class="right waves-effect waves-light btn-large modal-trigger spaceman blue" href="#modal6">Contact</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal white-text">
+    <div class="modal-content">
+      <h4>Events/Talks</h4>
+      <p>
+        As a Blockchain Evangalist, you'll often see me at universities and educational events speaking about the how and why of
+        distributed ledger technologies. I cover topics from simple Blockchain 101s to indepth usecase exploration and technical deep dives into fringe areas of what's currently out where. 
+      </p>
+      <p>
+        If you're interested in scheduling a talk, feel free to reach out to be via email (dev@blockchainspaceman) and see if I'm free. Any general educational workshops I do for free, but if you'd like to schedule a deep dive consultation for your company, I do have consulting rates available as well. 
+      </p>
+
+      <p>
+        Non Exhaustive list of events I've spoken at:
+        <ul>
+          <li> CMT Digital Blockchain Workshop, Chicago 2017</li>
+          <li> FERC General Blockchain Workshop, Washington DC 2018</li>
+          <li> Hyperledger Workshop, Chicago 2017</li>
+          <li> University of Illinois @ Urbana-Campaign, HackIL 2017</li>
+          <li> DePaul Unviserity, Demon Hacks 2017, 2018</li>
+          <li> Illinois Blockchain Code Camp 2017 </li>
+          <li> University of Maryland, Bitcamp, 2017 </li>
+          <li> DC Blockchain Summit, 2018</li>
+          <li> Chicago Blockchain Project Conference, 2018 </li>
+          <li> Universtiy of Chicago, Uncommon 2017</li>
+          <li> Distributed Markets, Chicago 2018</li>
+          <li> University of Michigan, Mhacks, 2017, 2018</li>
+          <li> University of Wisconsin, Madison, 2017, 2018</li>
+        </ul>
+
+      </p>
+      <!--
+        <div class="video-container">
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      -->
+    </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal white-text">
+    <div class="modal-content">
+      <h4>Projects</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod nunc eu pellentesque iaculis. Aliquam scelerisque
+        dolor eget sem ultrices, non finibus sapien sagittis. Cras quis est a ex ultricies euismod. Suspendisse ultricies
+        mauris vitae lectus dapibus, aliquam egestas est ullamcorper. Sed vulputate posuere augue, quis gravida dolor. Proin
+        eget massa tempus, auctor tellus sit amet, posuere metus. Ut justo eros, aliquet ac nisl id, ornare sagittis orci.
+        Nam leo nunc, pretium quis tortor at, posuere iaculis dui. Phasellus non mauris nec sem placerat condimentum nec
+        quis purus. Duis ut urna non ex facilisis lobortis quis quis leo. Nulla sollicitudin sit amet felis eu pretium. Etiam
+        pretium sodales mauris. Aliquam erat volutpat. Suspendisse nec eros orci.
+      </p>
+
+      <!--
           Custom multi-columned collapsible section!
 
           Technically this could instead be handled by setting a max-height
@@ -158,241 +210,426 @@ media="screen,projection"/>
           seemed more semantic, however, and allows a definite division of category
           between left and right.
         -->
-        <div class="collapsible-container">
-          <ul class="left collapsible">
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-btc"></i>First</div>
-              <div class="collapsible-body">
-                <span>
-                  Praesent facilisis dui vitae diam tempus tempor. Donec a tempus dolor, at blandit odio. Morbi quis urna et risus tempor imperdiet vel sed justo. Nullam luctus diam vitae tristique dapibus. Suspendisse quis mi nec metus ullamcorper tempor. Aliquam varius, eros ut efficitur pretium, tellus felis posuere justo, ut vestibulum ligula sem eu nibh. Phasellus a pretium tellus. Fusce ac pharetra est, at luctus elit. Suspendisse aliquam neque ipsum, a dapibus nisi dictum at.
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-id-card-o"></i>Second</div>
-              <div class="collapsible-body">
-                <span>
-                  Aliquam ac arcu eget mauris ultrices gravida in ac orci. Aenean fermentum fringilla magna in maximus. Nunc iaculis ipsum tortor, id aliquet elit elementum vel. In hac habitasse platea dictumst. Nulla facilisi. In pellentesque mi sed quam congue fermentum. Donec imperdiet scelerisque eros et tincidunt. Suspendisse egestas vestibulum elit sit amet pellentesque. Duis tempor lorem vitae accumsan placerat. Vestibulum gravida quis tortor eu hendrerit. Suspendisse viverra nulla turpis, at euismod magna pulvinar a. Fusce cursus mauris convallis risus maximus, quis mattis odio gravida. Integer facilisis ultrices nulla scelerisque cursus. Donec eu ipsum lectus.
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-coffee"></i>Third</div>
-              <div class="collapsible-body">
-                <span>
-                  Nunc faucibus molestie purus, ut consectetur est ornare vitae. Phasellus dapibus massa eu nisi tempor bibendum. Proin vitae dolor non dui vestibulum egestas ut in diam. Mauris ac luctus dui. Praesent eu posuere lorem. Maecenas varius consectetur dignissim. Proin nec arcu varius, semper mauris nec, convallis neque.
-                </span>
-              </div>
-            </li>
-          </ul>
-
-          <ul class="right collapsible">
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-cloud"></i>Fourth</div>
-              <div class="collapsible-body">
-                <span>
-                  Praesent facilisis dui vitae diam tempus tempor. Donec a tempus dolor, at blandit odio. Morbi quis urna et risus tempor imperdiet vel sed justo. Nullam luctus diam vitae tristique dapibus. Suspendisse quis mi nec metus ullamcorper tempor. Aliquam varius, eros ut efficitur pretium, tellus felis posuere justo, ut vestibulum ligula sem eu nibh. Phasellus a pretium tellus. Fusce ac pharetra est, at luctus elit. Suspendisse aliquam neque ipsum, a dapibus nisi dictum at.
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-bank"></i>Fifth</div>
-              <div class="collapsible-body">
-                <span>
-                  Aliquam ac arcu eget mauris ultrices gravida in ac orci. Aenean fermentum fringilla magna in maximus. Nunc iaculis ipsum tortor, id aliquet elit elementum vel. In hac habitasse platea dictumst. Nulla facilisi. In pellentesque mi sed quam congue fermentum. Donec imperdiet scelerisque eros et tincidunt. Suspendisse egestas vestibulum elit sit amet pellentesque. Duis tempor lorem vitae accumsan placerat. Vestibulum gravida quis tortor eu hendrerit. Suspendisse viverra nulla turpis, at euismod magna pulvinar a. Fusce cursus mauris convallis risus maximus, quis mattis odio gravida. Integer facilisis ultrices nulla scelerisque cursus. Donec eu ipsum lectus.
-                </span>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header spaceman blue"><i class="fa fa-podcast"></i>Sixth</div>
-              <div class="collapsible-body">
-                <span>
-                  Nunc faucibus molestie purus, ut consectetur est ornare vitae. Phasellus dapibus massa eu nisi tempor bibendum. Proin vitae dolor non dui vestibulum egestas ut in diam. Mauris ac luctus dui. Praesent eu posuere lorem. Maecenas varius consectetur dignissim. Proin nec arcu varius, semper mauris nec, convallis neque.
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <p>
-          Quisque malesuada tincidunt semper. Fusce dapibus tellus in facilisis sollicitudin. Suspendisse ultrices a erat sit amet auctor. Aenean suscipit vulputate massa malesuada tincidunt. Maecenas tincidunt sollicitudin semper. Sed nec sem id turpis sollicitudin placerat. Fusce tincidunt laoreet tempus. Nunc vitae accumsan mi. Suspendisse dictum consequat mollis. Quisque non lorem a enim consequat accumsan finibus sed sapien.
-        </p>
-      </div>
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
-      </div>
-    </div>
-
-    <div id="modal3" class="modal white-text">
-      <div class="modal-content">
-        <h4>Lorem Ipsum</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla. Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl. Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis. Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum, libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at, elementum est.
-        </p>
-        <p>
-          Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra non molestie a, semper id nunc.
-        </p>
-        <p>
-          Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec. Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
-        </p>
-        <p>
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
-        </p>
-      </div>
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
-      </div>
-    </div>
-
-    <div id="modal4" class="modal white-text">
-      <div class="modal-content">
-        <h4>Dolor Sit Amet</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla. Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl. Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis. Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum, libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at, elementum est.
-        </p>
-        <p>
-          Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra non molestie a, semper id nunc.
-        </p>
-        <p>
-          Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec. Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
-        </p>
-        <p>
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
-        </p>
-      </div>
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
-      </div>
-    </div>
-
-    <div id="modal5" class="modal white-text">
-      <div class="modal-content">
-        <h4>About</h4>
-
-        <div class="row">
-          <div class="col s12">
-            <ul class="tabs">
-              <li class="tab col s3"><a href="#FAQ"><i class="fa fa-question-circle"></i></a></li>
-              <li class="tab col s3"><a class="active" href="#default"><i class="fa fa-comments-o"></i></a></li>
-              <li class="tab col s3 disabled"><a href="#comingsoon"><i class="fa fa-ban"></i></a></li>
-              <li class="tab col s3"><a href="#hiring"><i class="fa fa-users"></i></a></li>
-            </ul>
-          </div>
-          <div id="FAQ" class="col s12">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla. Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
-            </p>
-          </div>
-          <div id="default" class="col s12">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl. Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis. Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum, libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at, elementum est.
-            </p>
-          </div>
-          <div id="comingsoon" class="col s12">
-            <p>
-              Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra non molestie a, semper id nunc.
-            </p>
-          </div>
-          <div id="hiring" class="col s12">
-            <p>
-              Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec. Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
-            </p>
-          </div>
-        </div>
-
-        <p>
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
-        </p>
-
-        <!-- This is supposed to allow for tab swiping, but isn't functioning -->
-        <!-- http://materializecss.com/tabs.html#swipeable -->
-        <ul id="tabs-swipe-demo" class="tabs">
-          <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-          <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-          <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+      <div class="collapsible-container">
+        <ul class="left collapsible">
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-btc"></i>First</div>
+            <div class="collapsible-body">
+              <span>
+                Praesent facilisis dui vitae diam tempus tempor. Donec a tempus dolor, at blandit odio. Morbi quis urna et risus tempor imperdiet
+                vel sed justo. Nullam luctus diam vitae tristique dapibus. Suspendisse quis mi nec metus ullamcorper tempor.
+                Aliquam varius, eros ut efficitur pretium, tellus felis posuere justo, ut vestibulum ligula sem eu nibh.
+                Phasellus a pretium tellus. Fusce ac pharetra est, at luctus elit. Suspendisse aliquam neque ipsum, a dapibus
+                nisi dictum at.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-id-card-o"></i>Second</div>
+            <div class="collapsible-body">
+              <span>
+                Aliquam ac arcu eget mauris ultrices gravida in ac orci. Aenean fermentum fringilla magna in maximus. Nunc iaculis ipsum
+                tortor, id aliquet elit elementum vel. In hac habitasse platea dictumst. Nulla facilisi. In pellentesque
+                mi sed quam congue fermentum. Donec imperdiet scelerisque eros et tincidunt. Suspendisse egestas vestibulum
+                elit sit amet pellentesque. Duis tempor lorem vitae accumsan placerat. Vestibulum gravida quis tortor eu
+                hendrerit. Suspendisse viverra nulla turpis, at euismod magna pulvinar a. Fusce cursus mauris convallis risus
+                maximus, quis mattis odio gravida. Integer facilisis ultrices nulla scelerisque cursus. Donec eu ipsum lectus.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-coffee"></i>Third</div>
+            <div class="collapsible-body">
+              <span>
+                Nunc faucibus molestie purus, ut consectetur est ornare vitae. Phasellus dapibus massa eu nisi tempor bibendum. Proin vitae
+                dolor non dui vestibulum egestas ut in diam. Mauris ac luctus dui. Praesent eu posuere lorem. Maecenas varius
+                consectetur dignissim. Proin nec arcu varius, semper mauris nec, convallis neque.
+              </span>
+            </div>
+          </li>
         </ul>
-        <div id="test-swipe-1" class="col s12 blue">
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
+
+        <ul class="right collapsible">
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-cloud"></i>Fourth</div>
+            <div class="collapsible-body">
+              <span>
+                Praesent facilisis dui vitae diam tempus tempor. Donec a tempus dolor, at blandit odio. Morbi quis urna et risus tempor imperdiet
+                vel sed justo. Nullam luctus diam vitae tristique dapibus. Suspendisse quis mi nec metus ullamcorper tempor.
+                Aliquam varius, eros ut efficitur pretium, tellus felis posuere justo, ut vestibulum ligula sem eu nibh.
+                Phasellus a pretium tellus. Fusce ac pharetra est, at luctus elit. Suspendisse aliquam neque ipsum, a dapibus
+                nisi dictum at.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-bank"></i>Fifth</div>
+            <div class="collapsible-body">
+              <span>
+                Aliquam ac arcu eget mauris ultrices gravida in ac orci. Aenean fermentum fringilla magna in maximus. Nunc iaculis ipsum
+                tortor, id aliquet elit elementum vel. In hac habitasse platea dictumst. Nulla facilisi. In pellentesque
+                mi sed quam congue fermentum. Donec imperdiet scelerisque eros et tincidunt. Suspendisse egestas vestibulum
+                elit sit amet pellentesque. Duis tempor lorem vitae accumsan placerat. Vestibulum gravida quis tortor eu
+                hendrerit. Suspendisse viverra nulla turpis, at euismod magna pulvinar a. Fusce cursus mauris convallis risus
+                maximus, quis mattis odio gravida. Integer facilisis ultrices nulla scelerisque cursus. Donec eu ipsum lectus.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header spaceman blue">
+              <i class="fa fa-podcast"></i>Sixth</div>
+            <div class="collapsible-body">
+              <span>
+                Nunc faucibus molestie purus, ut consectetur est ornare vitae. Phasellus dapibus massa eu nisi tempor bibendum. Proin vitae
+                dolor non dui vestibulum egestas ut in diam. Mauris ac luctus dui. Praesent eu posuere lorem. Maecenas varius
+                consectetur dignissim. Proin nec arcu varius, semper mauris nec, convallis neque.
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Quisque malesuada tincidunt semper. Fusce dapibus tellus in facilisis sollicitudin. Suspendisse ultrices a erat sit amet
+        auctor. Aenean suscipit vulputate massa malesuada tincidunt. Maecenas tincidunt sollicitudin semper. Sed nec sem
+        id turpis sollicitudin placerat. Fusce tincidunt laoreet tempus. Nunc vitae accumsan mi. Suspendisse dictum consequat
+        mollis. Quisque non lorem a enim consequat accumsan finibus sed sapien.
+      </p>
+    </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal white-text">
+    <div class="modal-content">
+      <h4>Lorem Ipsum</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus
+        est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque
+        libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla.
+        Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl.
+        Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt
+        dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam
+        quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod
+        turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis.
+        Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum,
+        libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue
+        lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at,
+        elementum est.
+      </p>
+      <p>
+        Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit
+        feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus
+        dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus
+        nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra
+        non molestie a, semper id nunc.
+      </p>
+      <p>
+        Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat
+        aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec.
+        Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus
+        erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
+      </p>
+      <p>
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
+      </p>
+    </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal white-text">
+    <div class="modal-content">
+      <h4>Dolor Sit Amet</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus
+        est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque
+        libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla.
+        Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl.
+        Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt
+        dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor, aliquam
+        quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus, ac euismod
+        turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel metus porta iaculis.
+        Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur luctus elementum,
+        libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada massa feugiat, congue
+        lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan, consequat erat at,
+        elementum est.
+      </p>
+      <p>
+        Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero hendrerit
+        feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros. Aliquam faucibus
+        dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur semper libero cursus
+        nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas eros massa, viverra
+        non molestie a, semper id nunc.
+      </p>
+      <p>
+        Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat
+        aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt nec.
+        Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam, ut luctus
+        erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
+      </p>
+      <p>
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
+      </p>
+    </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
+  
+  <!-- About -->
+  <div id="modal5" class="modal white-text">
+    <div class="modal-content">
+      <h4>About</h4>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3">
+              <a href="#FAQ">
+                <i class="fa fa-question-circle"></i>
+              </a>
+            </li>
+            <li class="tab col s3">
+              <a class="active" href="#default">
+                <i class="fa fa-comments-o"></i>
+              </a>
+            </li>
+            <li class="tab col s3 disabled">
+              <a href="#comingsoon">
+                <i class="fa fa-ban"></i>
+              </a>
+            </li>
+            <li class="tab col s3">
+              <a href="#hiring">
+                <i class="fa fa-users"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div id="test-swipe-2" class="col s12 red">
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
+        <div id="FAQ" class="col s12">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis tincidunt enim a laoreet. Donec varius finibus
+            est, et maximus ex aliquam ut. Aenean quam diam, tempus a semper eget, finibus ut risus. Mauris suscipit pellentesque
+            libero, vitae pretium nulla viverra ac. Nam sit amet tortor libero. Vivamus molestie magna nec suscipit fringilla.
+            Nulla neque urna, mollis et quam sed, ultricies lacinia tortor.
+          </p>
         </div>
-        <div id="test-swipe-3" class="col s12 green">
-          Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt, eleifend diam sed, eleifend nibh. t
+        <div id="default" class="col s12">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida quis neque in pretium. Etiam ac dignissim nisl.
+            Nam viverra orci vitae quam auctor, id semper enim porta. Proin suscipit, dui a ornare euismod, leo nisl tincidunt
+            dui, in gravida lorem odio non nibh. In eu metus lacinia, elementum ante ac, rhoncus velit. Nulla metus dolor,
+            aliquam quis massa nec, finibus ultrices urna. Nullam volutpat, urna vitae iaculis finibus, est urna congue tellus,
+            ac euismod turpis sem vitae ligula. Donec faucibus tincidunt magna sit amet mollis. Maecenas dictum tellus vel
+            metus porta iaculis. Sed accumsan vulputate nisi, a tempus tellus tempor ac. Suspendisse vulputate, nunc consectetur
+            luctus elementum, libero mauris ultrices enim, id pretium nisl erat id nulla. Mauris ut ex venenatis, malesuada
+            massa feugiat, congue lacus. Nullam efficitur magna lorem, sed fringilla urna tincidunt nec. Sed eu tortor accumsan,
+            consequat erat at, elementum est.
+          </p>
+        </div>
+        <div id="comingsoon" class="col s12">
+          <p>
+            Nulla vel vulputate eros. In ut libero fermentum, gravida neque a, dapibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nunc a porta sem. Sed efficitur venenatis nisi, ac placerat tellus convallis ut. Sed in mauris vel libero
+            hendrerit feugiat. Nullam quis neque arcu. In at nisi eget leo egestas molestie. Praesent sed convallis eros.
+            Aliquam faucibus dui justo. Praesent ex ipsum, varius efficitur aliquet id, tincidunt sit amet orci. Curabitur
+            semper libero cursus nisl congue, ut consectetur nisi iaculis. Integer congue pretium neque nec consequat. Maecenas
+            eros massa, viverra non molestie a, semper id nunc.
+          </p>
+        </div>
+        <div id="hiring" class="col s12">
+          <p>
+            Nunc libero augue, rutrum sed metus non, congue cursus elit. Curabitur sed maximus elit. Nulla lobortis velit in consequat
+            aliquet. Morbi et enim ac nibh gravida malesuada. Donec tristique est tortor, ac pellentesque orci tincidunt
+            nec. Pellentesque lorem arcu, imperdiet sed elit ut, fringilla pellentesque est. Etiam placerat fringilla quam,
+            ut luctus erat commodo pulvinar. Pellentesque id ligula sit amet eros bibendum placerat.
+          </p>
         </div>
       </div>
 
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
+      <p>
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
+      </p>
+
+      <!-- This is supposed to allow for tab swiping, but isn't functioning -->
+      <!-- http://materializecss.com/tabs.html#swipeable -->
+      <ul id="tabs-swipe-demo" class="tabs">
+        <li class="tab col s3">
+          <a href="#test-swipe-1">Test 1</a>
+        </li>
+        <li class="tab col s3">
+          <a class="active" href="#test-swipe-2">Test 2</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#test-swipe-3">Test 3</a>
+        </li>
+      </ul>
+      <div id="test-swipe-1" class="col s12 blue">
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
+      </div>
+      <div id="test-swipe-2" class="col s12 red">
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
+      </div>
+      <div id="test-swipe-3" class="col s12 green">
+        Sed efficitur sem nec sapien sodales rhoncus. Mauris in ultricies augue, sed consectetur ex. Cras ut tellus a erat convallis
+        volutpat. Morbi nisl felis, luctus eu elit vitae, eleifend porttitor nisi. Nulla laoreet varius leo, vel malesuada
+        massa malesuada vitae. Quisque sit amet augue volutpat, consectetur enim ac, porta est. Vivamus faucibus sem tincidunt,
+        eleifend diam sed, eleifend nibh. t
       </div>
     </div>
 
-    <div id="modal6" class="modal white-text">
-      <div class="modal-content">
-        <h4>Contact</h4>
-        <div class="row">
-          <form class="col s12 white-text">
-            <div class="row">
-              <div class="input-field col s6">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                  <input placeholder="First Name" id="first_name" type="text" class="validate">
-                  <!--<label for="first_name">First Name</label>-->
-                </div>
-              </div>
-              <div class="input-field col s6">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                  <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                  <!-- <label for="last_name">Last Name</label> -->
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                  <input placeholder="Email address" id="email" type="email" class="validate">
-                  <!-- <label for="textarea1">Message here</label> -->
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-comments fa-fw"></i></span>
-                  <textarea placeholder="Message" id="textarea1" class="materialize-textarea"></textarea>
-                  <!-- <label for="textarea1">Message here</label> -->
-                </div>
-              </div>
-            </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
 
-            <button class="btn waves-effect waves-light spaceman blue" type="submit" name="action">Submit
-              <i class="fa fa-paper-plane fa-fw right"></i>
-            </button>
-          </form>
+  <!-- Contact -->
+  <div id="modal6" class="modal white-text">
+    <div class="modal-content">
+      <h4>Contact</h4>
+      <div class="row contact-links">
+        <div class='col s2'> 
+          <a class="white-text" href="https://www.facebook.com/dst97">
+            <i class="fa fa-facebook"></i>
+          </a>
         </div>
+        <div class='col s2'>
+          <a class="white-text" href="https://www.linkedin.com/in/devbharel/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <div class='col s2'>
+          <a class="white-text" href="https://twitter.com/cheesybrownie?lang=en">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <div class='col s2'>
+          <a class="white-text" href="https://github.com/brownie79">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <div class='col s2'>
+          <a class="white-text" href="https://devpost.com/brownie79?ref_content=user-portfolio">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+        <div class='col s2'>
+          <a class="white-text" href="mailto:dev@blockchainspaceman.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+        
       </div>
-      <div class="modal-footer spaceman blue">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text"><i class="fa fa-chevron-circle-left"></i> Back</a></a>
+      <div class="row"> 
+          <form class="col s12 white-text" netlify>
+          <div class="row">
+            <div class="input-field col s6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa-fw"></i>
+                </span>
+                <input placeholder="First Name" id="first_name" type="text" class="validate">
+                <!--<label for="first_name">First Name</label>-->
+              </div>
+            </div>
+            <div class="input-field col s6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa-fw"></i>
+                </span>
+                <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                <!-- <label for="last_name">Last Name</label> -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-envelope fa-fw"></i>
+                </span>
+                <input placeholder="Email address" id="email" type="email" class="validate">
+                <!-- <label for="textarea1">Message here</label> -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-comments fa-fw"></i>
+                </span>
+                <textarea placeholder="Message" id="textarea1" class="materialize-textarea"></textarea>
+                <!-- <label for="textarea1">Message here</label> -->
+              </div>
+            </div>
+          </div>
+
+          <button class="btn waves-effect waves-light spaceman blue" type="submit" name="action">Submit
+            <i class="fa fa-paper-plane fa-fw right"></i>
+          </button>
+        </form> 
+
       </div>
     </div>
+    <div class="modal-footer spaceman blue">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">
+        <i class="fa fa-chevron-circle-left"></i> Back</a>
+      </a>
+    </div>
+  </div>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> <!-- If using JQuery, make sure this is first -->
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- If using JQuery, make sure this is first -->
 
-    <!-- Compiled and minified JavaScript -->
-    <!-- If you want M.AutoInit() to ignore a certain element, you can add the class .no-autoinit to the element and it will not be initialized by autoinit. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="js/materialize-custom.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <!-- If you want M.AutoInit() to ignore a certain element, you can add the class .no-autoinit to the element and it will not be initialized by autoinit. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/materialize-custom.min.js"></script>
 
-    <!-- Minimize this file when done! -->
-    <!--<script src="js/materialize-custom.js"></script>-->
-  </body>
+  <!-- Minimize this file when done! -->
+  <!--<script src="js/materialize-custom.js"></script>-->
+
+</body>
+
 </html>
