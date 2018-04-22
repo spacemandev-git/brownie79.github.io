@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+// Color
+// Added spaceman blue #4a90e2, spaceman grey #424848
+@import "components/color-variables";
+@import "components/color-classes";
+
+// Variables;
+/*
+  Changed primary-color from materialize-red lighten-2 to spaceman blue #4a90e2
+  Changed secondary-color from teal to spaceman grey #424848
+*/
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/typography";
+@import "components/transitions";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sidenav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/tapTarget";
+@import "components/pulse";
+@import "components/datepicker";
+@import "components/timepicker";
+
+// Custom Styles Below
+
+// Debugging
+/*
+body {
+  border: 2px solid red;
+
+  .space-control {
+    border: 2px solid orange;
+  }
+  .mobile-space-control {
+    border: 1px solid yellow;
+  }
+
+  .top-row {
+    border: 3px solid green;
+  }
+  .middle-row {
+    border: 3px solid blue;
+  }
+  .bottom-row {
+    border: 3px solid indigo;
+  }
+}
+*/
+
+// Actual styles start:
+html {
+  // Custom Grey space fallback color if background space image does not load.
+  background: url(../assets/background.png) no-repeat center center fixed #424848;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  // Set container to full viewport height, instead of defining height by contents
+  // Useful for centering on screen
+  // https://stackoverflow.com/questions/23046801/height-not-100-on-container-fluid-even-though-html-and-body-are
+  height: 100%;
+  //overflow-y: scroll;
+}
+
+.fa {
+  font-size: 1.5em;
+}
+
+body {
+  height: 100%;
+
+  .space-control {
+    width: 60em;
+    height: 66%;
+    // Find a better solution for this size fix
+    background: url(../assets/dev-with-text.png) no-repeat center;
+    background-size: 250px;
+
+    // Partial flexbox solution, minus display: flex https://stackoverflow.com/questions/14123999/center-a-div-horizontally-and-vertically
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .btn-large {
+      border-radius: 1em;
+      margin: 0;
+      margin-top: auto;
+      width: 12em;
+      height: 4em;
+      line-height: 4em;
+      font-size: 1.215em;
+      font-weight: 700;
+
+      // Don't let the text on buttons be selected
+      user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+    }
+
+    .top-row, .middle-row, .bottom-row {
+      height: 33.333%;
+      width: 83%;
+      margin: auto;
+
+      .btn-large {
+        // Partial flexbox solution, minus display: flex https://stackoverflow.com/questions/14123999/center-a-div-horizontally-and-vertically
+        top: 50%;
+        -webkit-transform: translate(-0%, -50%);
+        transform: translate(-0%, -50%);
+      }
+    }
+
+    // More wide than top/bottom rows
+    .middle-row {
+      width: 100%;
+    }
+  }
+
+  .mobile-space-control {
+    visibility: hidden;
+  }
+
+  .modal {
+    background-color:rgba(66, 72, 72, 0.88);
+    max-height: 80%;
+
+    .modal-footer {
+      .btn-flat {
+        font-weight: 700;
+        font-size: 1.215em;
+      }
+    }
+
+    .collapsible {
+      //border: none;
+      width: 100%;
+      margin: 1em;
+
+      // Comment these out to restore default box-shadow and borders (per collapsible)
+      box-shadow: none;
+      border: none;
+    }
+
+    .collapsible-header {
+      font-weight: 700;
+    }
+
+    .collapsible-container {
+      display: flex;
+    }
+
+    p {
+      display: block;
+    }
+
+    // Youtube videos, but responsive: https://www.ostraining.com/blog/coding/responsive-videos/
+    .video-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    .video-container iframe{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    input, textarea {
+      color: white;
+    }
+
+    input[type=email], input[type=text], textarea {
+      margin-left: 2.5em;
+      width: calc(100% - 2.5em);
+    }
+
+    .input-group {
+      i {
+        position: absolute;
+        margin-top: 0.5em;
+      }
+    }
+
+    button[type="submit"] {
+      width: 10em;
+      margin-left: calc(50% - 5em);
+      margin-right: calc(50% - 5em);
+    }
+
+    .carousel .carousel-item {
+      width: 100%;
+    }
+  }
+
+  .modal:focus {
+    outline: none;
+  }
+}
+
+.contact-links{
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile Styles */
+// You can implement better media queries with: http://materializecss.com/sass.html
+/*
+  Could make this better, right now the
+  only responsive background element is
+  the space around the center elements
+*/
+@media screen and (max-width: 870px) {
+    body {
+    .space-control {
+      //margin-top: 33.13334%;
+      margin-top: 28px;
+      width: 100%;
+      background-size: 200px;
+
+      .btn-large {
+        visibility: hidden;
+      }
+    }
+
+    // Make the navbar visible when mobile
+    .mobile-space-control {
+      visibility: visible;
+    }
+
+    .user-links  {
+      color: white;
+
+      a {
+        margin-right: 1em;
+      }
+    }
+
+    .user-view {
+      background-color:rgba(74, 144, 226, 1);
+    }
+
+    .sidenav {
+      background: url(../assets/background.png) no-repeat center center fixed #424848;
+      // background-color:rgba(66, 72, 72, 0.66);
+    }
+
+    .modal {
+      max-height: 80%;
+
+      .collapsible-container {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .collapsible {
+        //border: none;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.215em;
+        width: 100%;
+      }
+
+      .row .col .s6 {
+        width: 100%;
+      }
+
+      input[type=email], input[type=text], textarea {
+        margin-left: 1em;
+        width: calc(100% - 1.5em);
+      }
+
+      .input-group {
+        i {
+          position: absolute;
+          margin-top: 0.5em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
